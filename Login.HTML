@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        // 1. Criar uma lista de emails falsos
+        // 2. Criar uma lista de senhas falsas
+        // 3. Receber email e senha por prompt
+        // 4.Verificar se a senha existe dentro da lista
+        // 5 Verificar se o email existe dentro da lista
+        // 6.Enquanto o email ou senha estiver errado ficar solicitando o prompt novamente
+        //7. Quando o email e a senha estiverem corretos deve ser exibido dentro da tag <body> 
+        // a frase "Usuario logado com sucesso!"
+
+        //.Obs: O email e a senhadevem estar relacionados pelo index da lista
+        //.ex: email[0] e senha[0] deve ser considerado usuario correto
+        //.email[1] e senha[0] deve ser considerado usuario incorreto        
+
+
+        let emails = ["andressa@email.com", "fatima@email.com", "vanessa@email.com"]
+        let senhas = [367, 840, 992]
+
+
+
+
+        let emailDoLogin = prompt("Digite seu email");
+
+        let senhaDoLogin = prompt("Digite sua senha");
+        let texto = '';
+
+        for(i = 0; i < emails.length; i++){
+            if(emailDoLogin == emails[i] && senhaDoLogin == senhas[i]) {
+                alert("Logado!")
+                break;
+            } else {
+                alert("Não Logado")
+               
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
