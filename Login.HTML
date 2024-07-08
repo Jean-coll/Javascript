@@ -23,23 +23,30 @@
         let emails = ["andressa@email.com", "fatima@email.com", "vanessa@email.com"]
         let senhas = [367, 840, 992]
 
+        let buscarusuario= true;
 
 
 
-        let emailDoLogin = prompt("Digite seu email");
+            while(buscarusuario) {
 
-        let senhaDoLogin = prompt("Digite sua senha");
-        let texto = '';
+            
+        
+                let emailinserido = prompt("Digite seu email");        
+        let senhainserida = prompt("Digite sua senha");
+        let usuarioencontrado =emails.indexOf(emailinserido)
+        let senhaencontrada =senhas.indexOf(senhainserida)
+        
 
-        for(i = 0; i < emails.length; i++){
-            if(emailDoLogin == emails[i] && senhaDoLogin == senhas[i]) {
-                alert("Logado!")
+        
+            if(usuarioencontrado >=0 && senhaencontrada >=0 && usuarioencontrado=== senhaencontrada) {
+                alert("Cadastro válido!")
                 break;
-            } else {
+            }  {
                 alert("Não Logado")
                
             }
         }
+            
 
 
 

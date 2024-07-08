@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condicionais</title>
+    <title>Calcular media do aluno</title>
     <script>
 
-        let nota1 =10;
-        let nota2 =7;
-        let media = (nota1 +nota2) / 2;
-        console.log("A média do aluno é:" + media);
-        let alunopassou = media > notaminima;
-        console.log(alunopassou);
+        function msg (etapa,aplicarmargem,margem= 0.5) {
+            let nota = prompt("Digite a " + etapa +  "nota:");
+            return parsefloat(nota)* margem;
+        }
+      
+        // Recebe a primeira nota do usuario
+           var nota1 = msg("primeira", true,1.2);
+        // Recebe a segundaa nota do usuario
+           var nota2 = msg("primeira",false);
 
-        /* if (alunopassou) {
-            alert ("alunopassou");
-             } else (alunonãopassou) {
-
-            alert (alunonãopassou);    
-             }
+           // Calculando a media
+           var media = (nota1+nota2) /2
+           // Adiciona um paragrafo
 
     
 
